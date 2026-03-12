@@ -1,0 +1,345 @@
+/* PRODUCTS HERO */
+
+.products-hero{
+background:url("../images/products/leather-sofa.jpg") center/cover no-repeat;
+height:45vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+color:white;
+}
+
+.products-hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+.products-hero-content{
+position:relative;
+}
+
+.products-hero h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.products-hero p{
+color:#eee;
+}
+
+
+/* PRODUCT SECTION */
+
+.product-section{
+padding:100px 10%;
+background:#f8f8f8;
+}
+
+.product-header{
+text-align:center;
+max-width:700px;
+margin:auto;
+margin-bottom:50px;
+}
+
+.product-header h1{
+font-size:38px;
+margin-bottom:10px;
+}
+
+.product-header p{
+color:#666;
+}
+/* FILTER TABS */
+
+.product-tabs{
+text-align:center;
+margin-bottom:40px;
+}
+
+.tab-btn{
+padding:10px 20px;
+border:none;
+background:white;
+margin:5px;
+cursor:pointer;
+border:1px solid #ddd;
+}
+
+.tab-btn.active{
+background:#c6a75c;
+color:white;
+}
+
+
+/* PRODUCT GRID */
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+}
+
+.product-card{
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+overflow:hidden;
+transition:.4s;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+width:100%;
+transition:.4s;
+}
+
+.product-card:hover img{
+transform:scale(1.08);
+}
+
+.product-card h3{
+padding:15px;
+}
+
+.product-card p{
+padding:0 15px;
+font-size:14px;
+color:#666;
+}
+
+.price{
+display:block;
+padding:15px;
+color:#c6a75c;
+font-weight:bold;
+}
+.product-card{
+transition:all 0.3s ease;
+}
+
+/* PRODUCT IMAGE OVERLAY */
+
+.product-image{
+position:relative;
+overflow:hidden;
+}
+
+.product-image img{
+width:100%;
+display:block;
+transition:.4s;
+}
+
+.product-card:hover img{
+transform:scale(1.08);
+}
+
+.product-image .overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+display:flex;
+align-items:center;
+justify-content:center;
+opacity:0;
+transition:.3s;
+cursor:pointer;
+}
+
+.product-image .overlay i{
+color:white;
+font-size:22px;
+border:2px solid white;
+padding:10px;
+border-radius:none;
+}
+
+.product-image:hover .overlay{
+opacity:1;
+}
+
+.lightbox{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.9);
+display:none;
+align-items:center;
+justify-content:center;
+z-index:2000;
+}
+
+.lightbox-img{
+max-width:90%;
+max-height:90%;
+}
+
+.lightbox-close{
+position:absolute;
+top:30px;
+right:40px;
+font-size:40px;
+color:white;
+cursor:pointer;
+}
+
+/* =================================
+TABLET RESPONSIVE
+================================= */
+
+@media (max-width:900px){
+
+.products-hero{
+height:40vh;
+}
+
+.products-hero h1{
+font-size:34px;
+}
+
+.product-section{
+padding:80px 6%;
+}
+
+.product-header h1{
+font-size:32px;
+}
+
+.product-grid{
+gap:25px;
+}
+
+}
+
+
+/* =================================
+MOBILE DEVICES
+================================= */
+
+@media (max-width:768px){
+
+.products-hero{
+height:35vh;
+padding:20px;
+}
+
+.products-hero h1{
+font-size:28px;
+}
+
+.products-hero p{
+font-size:14px;
+}
+
+.product-section{
+padding:70px 6%;
+}
+
+.product-header h1{
+font-size:28px;
+}
+
+.product-header p{
+font-size:14px;
+}
+
+/* FILTER TABS */
+
+.product-tabs{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
+
+.tab-btn{
+padding:8px 16px;
+font-size:14px;
+}
+
+/* PRODUCT GRID */
+
+.product-grid{
+grid-template-columns:1fr;
+gap:25px;
+}
+
+/* PRODUCT CARD */
+
+.product-card h3{
+font-size:18px;
+}
+
+.product-card p{
+font-size:13px;
+}
+
+.price{
+font-size:16px;
+}
+
+}
+
+
+/* =================================
+SMALL PHONES
+================================= */
+
+@media (max-width:480px){
+
+.logo p{
+    display: none;
+}
+
+.products-hero{
+height:40vh;
+}
+
+.products-hero h1{
+font-size:24px;
+}
+
+.products-hero p{
+font-size:13px;
+}
+
+.product-header h1{
+font-size:24px;
+}
+
+.tab-btn{
+font-size:13px;
+padding:7px 14px;
+}
+
+.product-card{
+box-shadow:0 3px 15px rgba(0,0,0,0.08);
+}
+
+.lightbox-img{
+max-width:95%;
+max-height:85%;
+}
+
+.lightbox-close{
+top:20px;
+right:25px;
+font-size:32px;
+}
+
+}

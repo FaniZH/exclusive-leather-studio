@@ -1,0 +1,429 @@
+/* ===============================
+ABOUT HERO
+================================*/
+
+.about-hero{
+background:url("../images/intiriou/Interior2.jpg") center/cover no-repeat;
+height:45vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+position:relative;
+color:white;
+}
+
+.about-hero::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+}
+
+.about-hero-container{
+position:relative;
+max-width:700px;
+padding:0 20px;
+}
+
+.about-hero h1{
+font-size:42px;
+margin-bottom:12px;
+}
+
+.about-hero p{
+font-size:16px;
+color:#eee;
+}
+
+.about-hero-image img{
+width:100%;
+border-radius:6px;
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
+}
+
+
+/* ===============================
+MISSION VISION SECTION
+================================*/
+
+.mission-vision{
+background:url("../images/products/leather-sofa.jpg") center/cover no-repeat;
+padding:120px 10%;
+position:relative;
+}
+
+.mv-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+.mv-container{
+position:relative;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:40px;
+max-width:1100px;
+margin:auto;
+}
+
+.mv-item{
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(8px);
+border:1px solid rgba(255,255,255,0.15);
+padding:40px;
+text-align:center;
+color:white;
+transition:0.4s;
+}
+
+.mv-item i{
+font-size:34px;
+color:#c6a75c;
+margin-bottom:18px;
+}
+
+.mv-item h3{
+font-size:22px;
+margin-bottom:12px;
+}
+
+.mv-item p{
+font-size:15px;
+line-height:1.7;
+color:#eee;
+}
+
+.mv-item:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.12);
+border-color:#c6a75c;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* ===============================
+FOUNDER STORY
+================================*/
+
+.founder-section{
+border: 2px solid #b89645;
+padding:110px 10%;
+background:#ffffff;
+}
+
+.founder-container{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+max-width:1200px;
+margin:auto;
+}
+
+.founder-text h2{
+font-size:36px;
+margin-bottom:20px;
+}
+
+.founder-text p{
+margin-bottom:18px;
+color:#555;
+line-height:1.8;
+}
+
+.founder-image img{
+width:100%;
+border-radius:6px;
+box-shadow:0 10px 35px rgba(0,0,0,0.15);
+}
+
+
+/* ===============================
+TEAM SECTION
+================================*/
+
+.team{
+background:#f5f5f5;
+padding:110px 10%;
+text-align:center;
+}
+
+.team p{
+color:#666;
+margin-bottom:40px;
+}
+
+.team-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+max-width:1100px;
+margin:auto;
+}
+
+.team-member{
+background:white;
+padding:25px;
+border:1px solid #eee;
+transition:.4s;
+}
+
+.team-member img{
+width:100%;
+border-radius:4px;
+margin-bottom:15px;
+}
+
+.team-member h3{
+margin-bottom:5px;
+}
+
+.team-member p{
+font-size:14px;
+color:#777;
+}
+
+.team-member:hover{
+transform:translateY(-10px);
+box-shadow:0 12px 30px rgba(0,0,0,0.08);
+border-color:#c6a75c;
+}
+
+
+/* ===============================
+VALUES SECTION
+================================*/
+
+.values{
+padding:110px 10%;
+background:white;
+text-align:center;
+}
+
+.values-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:40px;
+max-width:1100px;
+margin:auto;
+margin-top:40px;
+}
+
+.value-item{
+padding:35px;
+border:1px solid #eee;
+transition:.4s;
+}
+
+.value-item i{
+font-size:30px;
+color:#c6a75c;
+margin-bottom:15px;
+}
+
+.value-item h3{
+margin-bottom:10px;
+}
+
+.value-item p{
+font-size:14px;
+color:#666;
+}
+
+.value-item:hover{
+transform:translateY(-8px);
+border-color:#c6a75c;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+
+/* ===============================
+MOBILE RESPONSIVE
+================================*/
+
+@media(max-width:768px){
+
+.about-hero-content{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.about-hero-text h1{
+font-size:34px;
+}
+
+.founder-container{
+grid-template-columns:1fr;
+}
+
+.team-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:500px){
+
+.team-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+/* =================================
+TABLET RESPONSIVE
+================================= */
+@media (max-width:900px){
+
+/* About Hero */
+.about-hero{
+  height:35vh;
+  padding:0 20px;
+}
+.about-hero h1{
+  font-size:34px;
+}
+.about-hero p{
+  font-size:15px;
+}
+
+/* Mission & Vision */
+.mv-container{
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+.mv-item{
+  padding:30px;
+}
+
+/* Founder Section */
+.founder-container{
+  grid-template-columns:1fr;
+  gap:40px;
+  text-align:center;
+}
+
+/* Team Section */
+.team-grid{
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+/* Values Section */
+.values-grid{
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+}
+
+/* =================================
+MOBILE RESPONSIVE
+================================= */
+@media (max-width:768px){
+
+.about-hero{
+  height:30vh;
+}
+.about-hero h1{
+  font-size:28px;
+}
+.about-hero p{
+  font-size:14px;
+}
+
+/* Mission & Vision */
+.mv-container{
+  grid-template-columns:1fr;
+}
+.mv-item{
+  padding:25px;
+}
+
+/* Team Section */
+.team-grid{
+  grid-template-columns:1fr;
+  gap:20px;
+}
+
+/* Values Section */
+.values-grid{
+  grid-template-columns:1fr;
+  gap:20px;
+}
+
+/* Founder Text */
+.founder-text h2{
+  font-size:28px;
+}
+.founder-text p{
+  font-size:14px;
+}
+}
+
+/* =================================
+SMALL PHONES
+================================= */
+@media (max-width:480px){
+
+.logo p{
+    display: none;
+}
+
+.about-hero{
+  height:50vh;
+}
+.about-hero h1{
+  font-size:22px;
+}
+.about-hero p{
+  font-size:13px;
+}
+
+.mv-item h3,
+.value-item h3,
+.founder-text h2{
+  font-size:18px;
+}
+
+.mv-item p,
+.value-item p,
+.founder-text p,
+.team-member p{
+  font-size:13px;
+}
+
+.team-member h3{
+  font-size:16px;
+}
+
+.about-container{
+        display: grid;
+        grid-template-columns: 1fr; /* single column */
+        gap: 30px;
+    }
+
+    /* Make text appear first, image second */
+    .about-text {
+        order: 1; /* text comes first */
+    }
+
+    .about-image {
+        order: 2; /* image comes after text */
+        text-align: center; /* optional, center image on mobile */
+    }
+
+    .about-text h2 {
+        text-align: center; /* optional, center heading */
+    }
+
+    .about-text p {
+        text-align: center; /* optional, center paragraphs */
+    }
+}
